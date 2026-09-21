@@ -1,0 +1,62 @@
+name: SteadyAPI Pricing
+generated: '2026-09-21'
+method: searched
+source: https://steadyapi.com/pages/pricing
+audience: developer-api
+pricing_basis: tiered-subscription
+published: true
+delivery:
+  delivery: managed
+currency: USD
+billing_periods:
+- monthly
+- yearly
+notes: >-
+  Four self-serve subscription tiers, each priced by monthly request volume and
+  including access to every data API (Stock Market, Options, Crypto, AliExpress,
+  Reddit, Booking.com, Real Estate, Baseball/MLB, Hockey, Amazon, Instagram,
+  Twitter/X, AutoHub, ScrapeFlow) with commercial-use rights and a 7-day trial.
+  Yearly billing saves 20% (verbatim yearly per-month-equivalent prices on the
+  page: $11.96 / $32.50 / $72.50 / $320.83). Prices captured 2026-09-21.
+plan_count: 4
+plans:
+- name: Starter
+  price_text: $14.95 USD / month
+  price: 14.95
+  billing_period: monthly
+  features:
+  - All data APIs (Stock, Options, Crypto, AliExpress, Reddit, Booking.com, Real Estate, MLB, NHL, Amazon, Instagram, Twitter/X, AutoHub, ScrapeFlow)
+  - Commercial Use
+  - 7-Day Trial
+  limits:
+  - 10,000 requests per month
+- name: Developer
+  price_text: $39.95 USD / month
+  price: 39.95
+  billing_period: monthly
+  features:
+  - All data APIs
+  - Commercial Use
+  - 7-Day Trial
+  limits:
+  - 50,000 requests per month
+- name: Business
+  price_text: $89.95 USD / month
+  price: 89.95
+  billing_period: monthly
+  features:
+  - All data APIs
+  - Commercial Use
+  - 7-Day Trial
+  limits:
+  - 250,000 requests per month
+- name: Enterprise
+  price_text: $299.95 USD / month
+  price: 299.95
+  billing_period: monthly
+  features:
+  - All data APIs
+  - Commercial Use
+  - 7-Day Trial
+  limits:
+  - 2,500,000 requests per month

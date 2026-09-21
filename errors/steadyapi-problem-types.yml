@@ -1,0 +1,22 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.steadyapi.com
+format: custom-json
+envelope: '{"message": string, "errors": {"<field>": ["<message>"...]}}'
+problems:
+- status: 401
+  title: Unauthenticated
+  description: >-
+    Missing or invalid personal access token. Provide a valid token via the
+    Authorization: Bearer header or the apikey query parameter.
+- status: 422
+  title: Validation error
+  description: >-
+    One or more required or malformed parameters. Response carries a top-level
+    message and an errors object mapping each field to its messages, e.g.
+    {"message": "...", "errors": {"ticker": ["The ticker field is required."]}}.
+- status: 429
+  title: Too Many Requests
+  description: >-
+    The 15 requests/second rate limit was exceeded. Back off and retry. See
+    rate-limits/steadyapi-rate-limits.yml

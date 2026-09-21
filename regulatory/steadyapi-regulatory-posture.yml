@@ -1,0 +1,10 @@
+generated: '2026-09-21'
+method: none
+signals: {}
+note: >-
+  Checked the harvested artifacts (no security.txt, no trust center, no
+  subprocessor list) and probed conventional paths plus the docs and Shopify
+  storefront. No SBOM, VPAT/accessibility conformance report, data-residency
+  statement, subprocessor table, DPA, AI-transparency notice, Global Privacy
+  Control commitment, or transparency report was found. Absence is the
+  measurement for this provider.

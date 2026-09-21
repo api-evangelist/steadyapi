@@ -1,0 +1,47 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.steadyapi.com
+authentication:
+  styles:
+  - Bearer token in the Authorization header ("Bearer {YOUR_AUTH_KEY}")
+  - apikey query parameter
+  note: Personal access tokens issued/revoked from the dashboard. See authentication/steadyapi-authentication.yml
+versioning:
+  style: uri-path
+  note: >-
+    Versioned in the URL path. v1, v2 and v3 are served concurrently; newer
+    endpoints are flagged in the docs and older ones carry a pointer to their
+    replacement (e.g. "We have a newer version of this endpoint: /v2/search").
+pagination:
+  style: offset
+  note: >-
+    Where paginated, endpoints take a page/offset parameter (default 0) plus
+    sort parameters; not all read endpoints paginate. No cursor pagination
+    documented.
+rate_limit_signaling:
+  status: 429
+  headers: none-documented
+  note: >-
+    Exceeding 15 requests/second returns HTTP 429 Too Many Requests. No
+    RateLimit-* / X-RateLimit-* / Retry-After headers are documented. See
+    rate-limits/steadyapi-rate-limits.yml
+error_envelope:
+  format: custom-json
+  shape: '{"message": string, "errors": {"<field>": ["<message>"...]}}'
+  note: >-
+    Validation errors return a message plus a per-field errors object
+    (Laravel-style). Not RFC 9457 problem+json. See
+    errors/steadyapi-problem-types.yml
+idempotency:
+  coverage: na
+  mechanism: null
+  header: null
+  note: >-
+    SteadyAPI is a read-only data-retrieval API — every documented operation is
+    an HTTP GET returning data. There is no mutating/write surface, so
+    idempotency keys and replay protection do not apply.
+reversibility:
+  applicable: false
+  note: >-
+    Read-only API with no write, create, delete or transactional surface;
+    reversibility is not applicable.

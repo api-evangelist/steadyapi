@@ -1,0 +1,16 @@
+generated: '2026-09-21'
+method: none
+source: https://docs.steadyapi.com
+status: absent
+deployment:
+  mode: none
+  verified: searched
+  auth: unknown
+tools: []
+note: >-
+  No official hosted (remote) MCP server and no local-stdio MCP package were
+  found on SteadyAPI's site, docs, or any public registry (npm/PyPI searched;
+  no company GitHub org exists). The provider ships a REST/JSON API documented
+  via a Slate site and a Postman collection, but no MCP surface. A candidate
+  tool list was not derived because no OpenAPI is published; the Postman
+  collection (188 requests) could seed one in a later pass.

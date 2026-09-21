@@ -1,0 +1,21 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.steadyapi.com
+versioning:
+  style: uri-path
+  versions:
+  - v1
+  - v2
+  - v3
+  note: >-
+    Multiple major versions (v1, v2, v3) are served concurrently. New endpoints
+    are marked "new!" and superseded endpoints keep working while the docs point
+    to a newer version (e.g. /v1/search -> /v2/search).
+deprecation: >-
+  No formal deprecation policy, Sunset/Deprecation headers, or removal timeline
+  is published. Older endpoints are not removed; the documentation simply
+  surfaces a link to the newer version.
+sla: null
+status_page: null
+deprecated_operations: []
+deprecated_products: []

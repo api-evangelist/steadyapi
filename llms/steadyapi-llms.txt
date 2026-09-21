@@ -1,0 +1,34 @@
+# SteadyAPI
+
+> SteadyAPI is a multi-domain data-as-a-service platform exposing a single REST/JSON API
+> (api.steadyapi.com) across finance (real-time and historical stock, options, and crypto
+> market data), real estate, sports, e-commerce, travel, and social/web data. Endpoints are
+> versioned in the URL path (v1, v2, v3) and authenticated with a personal access token sent
+> as a Bearer Authorization header or an apikey query parameter. Rate limited to 15
+> requests/second; plans are sold by monthly request volume.
+
+## Documentation
+- [API Documentation](https://docs.steadyapi.com): Comprehensive endpoint reference (Slate) with try-it-out and per-endpoint examples.
+- [Postman Collection](https://docs.steadyapi.com/collection.json): Machine-readable Postman v2.1.0 collection (188 requests).
+- [Reddit Data API](https://steadyapi.com/pages/reddit-api): Reddit posts, comments, subreddit and user data.
+- [FAQ](https://steadyapi.com/pages/faq): Frequently asked questions.
+
+## Domains (endpoint groups)
+- Stocks & Options: /v1|/v2|/v3 search, movers, screener, quotes, history, financials, analyst-ratings, price-targets, institutional-holdings, sec-filings, options, options-flow, unusual-options-activity, technical indicators (sma, rsi, macd, ema, adx, cci, stoch).
+- Calendar Events: earnings, dividends, economic_events, ipo, public_offerings, stock-splits.
+- Crypto: profile, quotes, coins, holders, modules.
+- Real Estate: for-sale, rentals-search, car-value, environment-risk, depreciation, gallery-similar-homes.
+- Sports: Baseball (MLB) and Hockey (NHL) games, teams, rosters, standings, box scores, play-by-play.
+- E-commerce: Amazon (products, reviews, rankings, sellers, deals), AliExpress (search, product detail/reviews, collections).
+- Travel: Booking.com flights and hotels (search, details, availability, reviews).
+- Social/Web: Reddit, Twitter/X, Instagram, AutoHub (vehicles/VIN), ScrapeFlow (web scraping).
+
+## Account & Pricing
+- [Pricing](https://steadyapi.com/pages/pricing): Starter $14.95/mo (10k req), Developer $39.95/mo (50k), Business $89.95/mo (250k), Enterprise $299.95/mo (2.5M); yearly saves 20%; 7-day trial.
+- [Privacy Policy](https://steadyapi.com/pages/privacy-policy)
+- [Contact](https://steadyapi.com/pages/contact)
+
+## Authentication
+- Bearer token: `Authorization: Bearer {YOUR_AUTH_KEY}`
+- Query parameter: `?apikey={YOUR_AUTH_KEY}`
+- Tokens are created and revoked from the dashboard (Account -> Personal Access Tokens).

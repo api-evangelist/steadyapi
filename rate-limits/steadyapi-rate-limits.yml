@@ -1,0 +1,23 @@
+name: SteadyAPI Rate Limits
+generated: '2026-09-21'
+method: searched
+source: https://docs.steadyapi.com
+limits:
+- name: Global request rate
+  limit_text: 15 requests per second
+  limit: 15
+  window: second
+  scope: per-key
+  kind: standard
+  note: >-
+    A single flat rate limit applies across the whole API. Exceeding it returns
+    HTTP 429 Too Many Requests; the docs recommend implementing a retry
+    mechanism. No X-RateLimit-* / RateLimit-* / Retry-After response headers are
+    documented.
+overage_status: 429
+headers_documented: false
+monthly_quota_note: >-
+  Beyond the per-second rate limit, each plan tier includes a monthly request
+  quota (Starter 10,000 / Developer 50,000 / Business 250,000 / Enterprise
+  2,500,000 requests per month); see plans/steadyapi-plans-pricing.yml. Some
+  endpoints declare an "Endpoint weight" (typically 1) in the docs.

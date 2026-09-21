@@ -1,0 +1,26 @@
+generated: '2026-09-21'
+method: searched
+source: https://docs.steadyapi.com
+docs: https://docs.steadyapi.com
+summary: >-
+  SteadyAPI authenticates every protected endpoint with a personal access token.
+  The token is sent either as an HTTP Authorization header ("Bearer {YOUR_AUTH_KEY}")
+  or, for browser/GET use, as an "apikey" query-string parameter. Tokens are
+  generated and revoked by the account holder from the dashboard (Account ->
+  Personal Access Tokens). No OAuth 2.0 / OpenID Connect flow is documented.
+schemes:
+- type: http
+  scheme: bearer
+  name: Authorization
+  in: header
+  description: >-
+    Send the personal access token as an Authorization header with the value
+    "Bearer {YOUR_AUTH_KEY}". Endpoints requiring auth are marked with a
+    "requires authentication" badge in the documentation.
+- type: apiKey
+  name: apikey
+  in: query
+  description: >-
+    Alternative browser-friendly authentication: pass the personal access token
+    as an "apikey" query parameter, e.g.
+    https://api.steadyapi.com/v1/markets/search?search=AA&apikey={YOUR_AUTH_KEY}

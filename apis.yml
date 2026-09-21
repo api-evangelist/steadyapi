@@ -1,0 +1,112 @@
+name: SteadyAPI
+aid: steadyapi
+description: SteadyAPI is a multi-domain data-as-a-service platform exposing a single REST/JSON API across
+  finance (real-time and historical stock, options and crypto market data), real estate, sports (MLB,
+  NHL), e-commerce (Amazon, AliExpress), travel (Booking.com), and social/web data (Reddit, Twitter/X,
+  Instagram, vehicles/VIN, and web scraping). Endpoints are versioned in the URL path (v1/v2/v3), authenticated
+  with a personal access token via a Bearer header or apikey query parameter, rate limited to 15 requests
+  per second, and sold on four subscription tiers by monthly request volume.
+tags:
+- Data
+- Finance
+- Stock Market
+- Social Media
+- Reddit
+- API
+- Data as a Service
+- Web Data
+- Alternative Data
+common:
+- type: RateLimits
+  url: rate-limits/steadyapi-rate-limits.yml
+- type: Plans
+  url: plans/steadyapi-plans-pricing.yml
+- type: Conventions
+  url: conventions/steadyapi-conventions.yml
+- type: Authentication
+  url: authentication/steadyapi-authentication.yml
+- type: Lifecycle
+  url: lifecycle/steadyapi-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/steadyapi-problem-types.yml
+- type: LLMsTxt
+  url: llms/steadyapi-llms.txt
+- type: TermsOfService
+  url: https://steadyapi.com/pages/terms-and-conditions
+- type: Login
+  url: https://steadyapi.com/login
+- type: DomainSecurity
+  url: security/steadyapi-domain-security.yml
+- type: Website
+  url: https://steadyapi.com
+- type: Documentation
+  url: https://docs.steadyapi.com
+- type: Pricing
+  url: https://steadyapi.com/pricing
+- type: PrivacyPolicy
+  url: https://steadyapi.com/pages/privacy-policy
+- type: Support
+  url: https://steadyapi.com/pages/contact
+maintainers:
+- FN: SteadyAPI
+  url: https://steadyapi.com
+image: https://steadyapi.com/logo/steadyapi-white-api.svg
+apis:
+- name: SteadyAPI
+  description: REST/JSON API providing stock market, options, crypto, real estate, sports, e-commerce,
+    social media, travel, and web-scraping data. Bearer-token or apikey auth, 15 req/sec rate limit.
+  humanURL: https://docs.steadyapi.com
+  baseURL: https://api.steadyapi.com
+  tags:
+  - financial-data
+  - stock-market
+  - options
+  - cryptocurrency
+  - real-estate
+  - e-commerce
+  - social-media
+  - sports-data
+  - travel
+  - web-scraping
+  - market-data
+  - rest-api
+  properties:
+  - type: Postman
+    url: postman/steadyapi-collection.json
+  - type: Postman
+    name: Postman (provider-hosted)
+    url: https://docs.steadyapi.com/collection.json
+  - type: Documentation
+    url: https://docs.steadyapi.com
+  aid: steadyapi:steadyapi
+  image: https://steadyapi.com/logo/steadyapi-white-api.svg
+- name: Reddit Data API
+  description: REST/JSON API for fetching Reddit posts, comments, voting data, subreddit statistics, and
+    user activity. Endpoints under /v1/reddit/ include /search, /posts, /post, /subreddit/popular, /subreddit/info,
+    /subreddit/new, /subreddit/comments, /user-stats, and /user-data. Bearer token or apikey parameter
+    authentication; rate limited to 15 requests per second.
+  humanURL: https://steadyapi.com/pages/reddit-api
+  baseURL: https://api.steadyapi.com
+  tags:
+  - reddit
+  - social-media
+  - social-listening
+  - sentiment-analysis
+  - web-data
+  - data-as-a-service
+  - alternative-data
+  - ai-training-data
+  properties:
+  - type: Documentation
+    url: https://docs.steadyapi.com/#reddit
+  aid: steadyapi:reddit-data-api
+  image: https://steadyapi.com/logo/steadyapi-white-api.svg
+url: https://steadyapi.com
+created: '2026-09-21'
+modified: '2026-09-21'
+position: Producing
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v5
