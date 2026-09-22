@@ -10,6 +10,15 @@ tags:
 - Data
 - Finance
 - Stock Market
+- Social-Media
+- Reddit
+- Data as a Service
+- Web Data
+- Alternative Data
+tags_raw:
+- Data
+- Finance
+- Stock Market
 - Social Media
 - Reddit
 - API
@@ -58,6 +67,19 @@ apis:
   humanURL: https://docs.steadyapi.com
   baseURL: https://api.steadyapi.com
   tags:
+  - Financial Data
+  - Stock Market
+  - Options
+  - Cryptocurrency
+  - Real-Estate
+  - E-Commerce
+  - Social-Media
+  - Sports Data
+  - Travel
+  - Web Scraping
+  - Market Data
+  - REST API
+  tags_raw:
   - financial-data
   - stock-market
   - options
@@ -88,6 +110,15 @@ apis:
   humanURL: https://steadyapi.com/pages/reddit-api
   baseURL: https://api.steadyapi.com
   tags:
+  - Reddit
+  - Social-Media
+  - Social Listening
+  - Sentiment Analysis
+  - Web Data
+  - Data as a Service
+  - Alternative Data
+  - AI Training Data
+  tags_raw:
   - reddit
   - social-media
   - social-listening
