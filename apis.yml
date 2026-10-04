@@ -10,7 +10,7 @@ tags:
 - Data
 - Finance
 - Stock Market
-- Social-Media
+- Social Media
 - Reddit
 - Data as a Service
 - Web Data
@@ -25,6 +25,7 @@ tags_raw:
 - Data as a Service
 - Web Data
 - Alternative Data
+- Social-Media
 common:
 - type: RateLimits
   url: rate-limits/steadyapi-rate-limits.yml
@@ -71,9 +72,9 @@ apis:
   - Stock Market
   - Options
   - Cryptocurrency
-  - Real-Estate
+  - Real Estate
   - E-Commerce
-  - Social-Media
+  - Social Media
   - Sports Data
   - Travel
   - Web Scraping
@@ -92,6 +93,8 @@ apis:
   - web-scraping
   - market-data
   - rest-api
+  - Real-Estate
+  - Social-Media
   properties:
   - type: Postman
     url: postman/steadyapi-collection.json
@@ -111,7 +114,7 @@ apis:
   baseURL: https://api.steadyapi.com
   tags:
   - Reddit
-  - Social-Media
+  - Social Media
   - Social Listening
   - Sentiment Analysis
   - Web Data
@@ -127,6 +130,7 @@ apis:
   - data-as-a-service
   - alternative-data
   - ai-training-data
+  - Social-Media
   properties:
   - type: Documentation
     url: https://docs.steadyapi.com/#reddit
