@@ -27,6 +27,8 @@ tags_raw:
 - Alternative Data
 - Social-Media
 common:
+- url: https://steadyapi.com/blogs
+  type: Blog
 - type: RateLimits
   url: rate-limits/steadyapi-rate-limits.yml
 - type: Plans
@@ -138,7 +140,7 @@ apis:
   image: https://steadyapi.com/logo/steadyapi-white-api.svg
 url: https://steadyapi.com
 created: '2026-09-21'
-modified: '2026-09-21'
+modified: '2026-10-06'
 position: Producing
 x-enrichment:
   date: '2026-09-21'
