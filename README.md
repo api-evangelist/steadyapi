@@ -1,4 +1,4 @@
-# steadyapi
+# SteadyAPI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,103 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SteadyAPI is a multi-domain data-as-a-service platform exposing a single REST/JSON API (api.steadyapi.com) across finance (real-time and historical stock, options and crypto market data), real estate, sports (MLB, NHL), e-commerce (Amazon, AliExpress), travel (Booking.com) and social/web data (Reddit, Twitter/X, Instagram, vehicles, web scraping). Endpoints are versioned in the URL path (v1/v2/v3), authenticated with a personal access token (Bearer header or apikey query parameter), rate limited to 15 requests/second, and sold on four subscription tiers by monthly request volume.
+SteadyAPI is a multi-domain data-as-a-service platform exposing a single REST/JSON API across finance (real-time and historical stock, options and crypto market data), real estate, sports (MLB, NHL), e-commerce (Amazon, AliExpress), travel (Booking.com), and social/web data (Reddit, Twitter/X, Instagram, vehicles/VIN, and web scraping). Endpoints are versioned in the URL path (v1/v2/v3), authenticated with a personal access token via a Bearer header or apikey query parameter, rate limited to 15 requests per second, and sold on four subscription tiers by monthly request volume.
+
+**Areas:** Data · Finance · Stock Market · Social Media · Reddit · Data as a Service · Web Data · Alternative Data
+
+## SteadyAPI on APIs.io
+
+Everything profiled for SteadyAPI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/steadyapi/](https://apis.io/providers/steadyapi/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [SteadyAPI](https://apis.io/apis/steadyapi/steadyapi/) — REST/JSON API providing stock market, options, crypto, real estate, sports, e-commerce, social media, travel, and web-scraping data. Bearer-token or apikey…
+- [Reddit Data API](https://apis.io/apis/steadyapi/reddit-data-api/) — REST/JSON API for fetching Reddit posts, comments, voting data, subreddit statistics, and user activity. Endpoints under /v1/reddit/ include /search,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Steadyapi Authentication](https://apis.io/security/steadyapi/steadyapi-authentication/)
+- [Steadyapi Domain Security](https://apis.io/security/steadyapi/steadyapi-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Steadyapi Plans Pricing](https://apis.io/plans/steadyapi/steadyapi-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Steadyapi Rate Limits](https://apis.io/rate-limits/steadyapi/steadyapi-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://steadyapi.com)
+- [Documentation](https://docs.steadyapi.com)
+- [Pricing](https://steadyapi.com/pricing)
+- [Support](https://steadyapi.com/pages/contact)
+- [Blog](https://steadyapi.com/blogs)
+- [Terms of service](https://steadyapi.com/pages/terms-and-conditions)
+- [Privacy policy](https://steadyapi.com/pages/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 32.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 76.3 |
+
+**Agent readiness 7.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/steadyapi/](https://apis.io/providers/steadyapi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SteadyAPI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/steadyapi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
